@@ -1,0 +1,38 @@
+<div class="container" style="direction: rtl;">
+    <form class="form" #form="ngForm">
+        <ng-template [ngIf]="flag">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="btn dropdown-toggle button det-input" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                
+                        יישות 1 100 ש"ח
+                        <mat-icon (click)="edit()">edit</mat-icon>
+                        <mat-icon>delete</mat-icon>
+                        <span class="span">|</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <button type="submit" class="det-button btn btn-primary mt-3" [disabled]="form.invalid"
+                        (submit)="addTruma(form)" routerLink="/addTruma">הוספת תרומה</button>
+                </div>
+                <div class="col-sm-9"></div>
+
+
+            </div>
+        </ng-template>
+
+        <ng-template [ngIf]="!flag">
+            <app-truma-edit-state></app-truma-edit-state>
+        </ng-template>
+
+    </form>
+</div>

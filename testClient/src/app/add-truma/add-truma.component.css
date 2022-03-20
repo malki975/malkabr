@@ -1,0 +1,52 @@
+.nav-title {
+    
+    margin: 0px;
+    width: 70%;
+    padding: 14px;
+}
+
+.form {
+    padding: 20px;
+}
+
+.button {
+    width: 100%;
+    text-align: start;
+    border: solid 2px;
+}
+
+.row {
+    padding: 14px;
+}
+
+.det-button {
+    border-radius:60px;
+    width: 85%;
+    height: 43px;
+}
+
+.det-input {
+    border: solid 2px #c6ccd1;
+    color: #c6ccd1
+}
+
+/* .ng-invalid.ng-touched:not(form)  {
+    border: 1px solid red;
+  } */
+
+  /* form input span {
+    color: #FF3838;
+    font-size: 2em;
+    position: absolute;
+    left: 2.3em;
+    top: -10px;
+ } */
+
+ .redBorder {
+     border-color: red;
+ }
+
+ .greenBorder {
+    /* background-color: green; */
+}
+ 

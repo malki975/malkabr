@@ -1,0 +1,23 @@
+.main {
+    width: 100%;
+    /* background-color: #dce1e4; */
+    display: flex;
+    /* justify-content: space-around; */
+    direction: rtl;
+}
+
+.sub-main {
+    width: 70%;
+    background-color: white;
+    padding: 20px 0px 0px 0px;
+}
+
+.nav {
+    display: flex;
+}
+
+.sub-nav {
+    /* color: #3d759a; */
+    padding: 0px 20px 0px 20px;
+    border-left: solid 1px #3d759a;
+}

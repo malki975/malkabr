@@ -1,0 +1,24 @@
+.form {
+    padding: 20px;
+}
+
+.form-control {
+    height: 60px;
+}
+
+.det-input {
+    border: solid 2px #c6ccd1;
+    width: 100%;
+    text-align: right;
+}
+
+.span {
+    font-size: xx-large;
+    padding: 3px;
+}
+
+.det-button {
+    border-radius:60px;
+    width: 85%;
+    height: 43px;
+}

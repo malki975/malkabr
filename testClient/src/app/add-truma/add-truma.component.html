@@ -1,0 +1,72 @@
+<div class="container" style="direction: rtl;">
+    <form class="form" [formGroup]="formData" #form="ngForm" (submit)="onSubmit(form)">
+        <h5 class="nav-title">הוספת דיווח על עמותה</h5>
+        <div class="row">
+            <div class="col-sm-3">
+                <input type="text" class="form-control det-input" id="name" placeholder="שם הישות המדינית הזרה *"
+                    name="name" [(ngModel)]="service.addTrumaData.Name" [ngClass]="{'greenBorder':formData.controls.Name.valid,'redBorder':formData.controls.Name.invalid && 
+                 formData.controls.Name.touched }" formControlName="Name">
+            </div>
+            <div class="col-sm-3">
+                <input type="text" class="form-control det-input" placeholder="סכום התרומה בשח *" name="sum"
+                    [(ngModel)]="service.addTrumaData.Sum" [ngClass]="{'greenBorder':formData.controls.Sum.valid,'redBorder':formData.controls.Sum.invalid && 
+                formData.controls.Sum.touched }" formControlName="Sum">
+            </div>
+            <div class="col-sm-6 ">
+                <div class="form-group">
+                    <select [(ngModel)]="service.addTrumaData.Type" [ngClass]="{'greenBorder':formData.controls.Type.valid,'redBorder':formData.controls.Type.invalid && 
+                    formData.controls.Type.touched }" formControlName="Type" class="form-control det-input"
+                        (change)="changeWebsite($event)">
+                        <option disabled>בחר סוג יישות</option>
+                        <option> סוג הישות המדינית הזרה *</option>
+                        <option *ngFor="let type of typeList">{{type}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <input type="text" class="form-control det-input" id="purpose" placeholder="ייעוד התרומה *"
+                    name="purpose" [(ngModel)]="service.addTrumaData.Purpose" [ngClass]="{'greenBorder':formData.controls.Purpose.valid,'redBorder':formData.controls.Purpose.invalid && 
+                formData.controls.Purpose.touched }" formControlName="Purpose">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <input type="text" class="form-control det-input" id="name" placeholder="התנאים לתרומה" name="name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <select  [ngClass]="{'greenBorder':formData.controls.CurrencyType.valid,'redBorder':formData.controls.CurrencyType.invalid && 
+                formData.controls.CurrencyType.touched }" formControlName="CurrencyType" class="form-control det-input"
+                    (change)="changeWebsite($event)" [(ngModel)]="service.addTrumaData.CurrencyType">
+                        <option disabled>בחר סוג מטבע</option>
+                        <option>סוג המטבע *</option>
+                        <option *ngFor="let currencyType of currencyTypeList">{{currencyType}}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <input type="text" class="form-control det-input" id="exchangeRate" placeholder="שער ההמרה *"
+                    name="exchangeRate" [(ngModel)]="service.addTrumaData.ExchangeRate" [ngClass]="{'greenBorder':formData.controls.ExchangeRate.valid,'redBorder':formData.controls.ExchangeRate.invalid && 
+                 formData.controls.ExchangeRate.touched }" formControlName="ExchangeRate">
+            </div>
+            <div class="col-sm-6 dropdown">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-3">
+                <button type="reset" class="det-button btn btn-outline-primary mt-3"
+                    (reset)="reset(form)">ניקוי</button>
+            </div>
+            <div class="col-sm-3">
+                <button type="submit" class="det-button btn btn-primary mt-3" (submit)="onSubmit(form)">שמירה</button>
+            </div>
+
+        </div>
+    </form>
+</div>

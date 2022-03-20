@@ -1,0 +1,36 @@
+.form {
+    border: solid 2px #3d759a;
+    border-radius: 10px;
+}
+
+.label-style {
+    background-color: #daf9ff;
+    border-radius: 10px;
+    height: 45px;
+}
+
+.button {
+    width: 100%;
+    text-align: start;
+    border: solid 2px;
+}
+
+.row {
+    padding: 14px;
+}
+
+.det-button {
+    border-radius:60px;
+    width: 85%;
+    height: 43px;
+}
+
+.det-input {
+    border: solid 2px #c6ccd1;
+    color: #c6ccd1;
+}
+
+.span {
+    font-size: xx-large;
+    padding: 3px;
+}

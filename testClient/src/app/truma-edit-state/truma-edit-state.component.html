@@ -1,0 +1,84 @@
+<div class="container" style="direction: rtl;">
+    <form class="form" #form="ngForm" (submit)="onSubmit(form)">
+        <div class="col-sm-12 label-style dropup">
+            <span type="span" id="dropdownMenuButton" class="dropdown-toggle"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                יישות 1 100 ש"ח
+                <mat-icon>edit</mat-icon>
+                <mat-icon>delete</mat-icon>
+                <span class="span">|</span>
+        </span>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+            <!-- <input type="text" class="form-control det-input" id="name" placeholder="fhddhbb" name="name"> -->
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <input type="text" class="form-control det-input" id="name" placeholder="שם הישות המדינית הזרה *" name="name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <input type="text" class="form-control det-input" id="name" placeholder="סכום התרומה בשח *" name="name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 dropdown">
+                <button class="btn dropdown-toggle button det-input" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    סוג הישות המדינית הזרה *
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <input type="text" class="form-control det-input" id="name" placeholder="יעוד התרומה *" name="name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <input type="text" class="form-control det-input" id="name" placeholder="התנאים לתרומה" name="name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 dropdown">
+                <button class="btn dropdown-toggle button det-input" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    סוג המטבע *
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <input type="text" class="form-control det-input" id="name" placeholder="שער ההמרה *" name="name">
+            </div>
+        </div>
+       
+        <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-3"> 
+                <button type="reset" class="det-button btn btn-outline-primary mt-3"
+                    (reset)="reset(form)">ניקוי</button>
+            </div>
+            <div class="col-sm-3">
+                <button type="submit" class="det-button btn btn-primary mt-3"
+                    [disabled]="form.invalid" (submit)="onSubmit(form)">שמירה</button></div>
+
+        </div>
+    </form>
+</div>

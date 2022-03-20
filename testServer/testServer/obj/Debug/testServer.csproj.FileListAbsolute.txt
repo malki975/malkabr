@@ -1,0 +1,2 @@
+C:\Users\משפחת ברון\testServer\testServer\obj\Debug\testServer.csprojAssemblyReference.cache
+C:\Users\משפחת ברון\testServer\testServer\obj\Debug\testServer.csproj.CoreCompileInputs.cache
